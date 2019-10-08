@@ -4,11 +4,11 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-    <Contact />
-      </header>
-    </div>
+  <div>
+    <Contact name="Anita" online  image="https://randomuser.me/api/portraits/women/15.jpg"/>
+    <Contact name="Diana" online="" image="https://randomuser.me/api/portraits/women/54.jpg"/>
+    <Contact name="Brent" online  image="https://randomuser.me/api/portraits/men/32.jpg"/>
+  </div>
   );
 }
 
