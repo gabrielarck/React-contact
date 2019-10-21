@@ -9,22 +9,27 @@ class Contact extends React.Component {
             online: false
         };
     }
-    render(props){
+    render(){
         return(
             <div className="Contact">
           <img 
                 className="avatar" 
-                src={props.image} 
+                src={this.props.image} 
                 alt="profils">
             </img>
-                <div className="name">
-                     {props.name}                
+                <div 
+                    onClick={event => {
+                        const clikonline =! this.state.online;
+                        this.setState({ online: clikonline });
+                    }}
+                    className="name">
+                     {this.props.name}                
                         <div  className="status ">
-                            <span className={props.online ? "status-online" : "status-offline" }>
-                                {props.online}
+                            <span className={this.state.online ? "status-online" : "status-offline" }>
+                                {this.state.online}
                             </span>
                                 <span className="status-texte">
-                                    {props.online ? "online" : "offline"}
+                                    {this.state.online ? "online" : "offline"}
                                 </span>
                         </div>
                 </div>
@@ -33,19 +38,6 @@ class Contact extends React.Component {
         );
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -6,10 +6,10 @@ import ContactList from './components/ContactList'
 function App() {
   return (
   <div>
-    <Contact name="Anita" online  image="https://randomuser.me/api/portraits/women/15.jpg"/>
-    <Contact name="Diana" online="" image="https://randomuser.me/api/portraits/women/54.jpg"/>
-    <Contact name="Brent" online  image="https://randomuser.me/api/portraits/men/32.jpg"/>
-    <div><ContactList online/></div>
+    <Contact name="Anita"  image="https://randomuser.me/api/portraits/women/15.jpg"/>
+    <Contact name="Diana"  image="https://randomuser.me/api/portraits/women/54.jpg"/>
+    <Contact name="Brent"  image="https://randomuser.me/api/portraits/men/32.jpg"/>
+    <ContactList online/>
   </div>
   
   );
