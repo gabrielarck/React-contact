@@ -1,9 +1,17 @@
 import React from 'react';
 import './Contact.css';
 
-function Contact (props){
-    return (
-        <div className="Contact">
+
+class Contact extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            online: false
+        };
+    }
+    render(props){
+        return(
+            <div className="Contact">
           <img 
                 className="avatar" 
                 src={props.image} 
@@ -22,14 +30,10 @@ function Contact (props){
                 </div>
         </div>
 
-        
-        
-    
-    );
-    
-
-
+        );
+    }
 }
+
 
 
 
